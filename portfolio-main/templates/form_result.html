@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат Формы</title>
+    <style>
+        h1 {
+          color: #FDFAF4;
+        }
+  
+        p {
+          color: #FDFAF4;
+        }
+        body {
+          margin: 0;
+          padding: 0 3%;
+          font-family: "Mulish", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.2em;
+          background: #323637;
+          color: #ffffff;
+        }
+
+        .center {
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    {% block content %}
+    <p class="center"><h1>Спасибо за заполнение формы!</h1></p>
+    <p class="center"><p>Ваш email: {{ email }}</p></p>
+    <p class="center"><p>Ваш комментарий: {{ text }}</p></p>
+    {% endblock %}
+</body>
+</html>
